@@ -86,6 +86,7 @@ p {
 
 .about-container {
   display: flex;
+  margin-bottom: 45px;
 }
 
 .about-title {
@@ -96,9 +97,52 @@ p {
   margin: 0 1.5%;
   margin-left: 8%;
   font-size: 36px;
+  width: 15%;
 }
 
 .about-content {
+  width: 100%;
+  font-size: 20px;
+}
+
+.work-container {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.work-title {
+  color: #808080;
+  border-right: 7px solid #ccc;
+  padding-right: 20px;
+  float: left;
+  margin: 0 1.5%;
+  margin-left: 8%;
+  font-size: 36px;
+  width: 15%;
+}
+
+.work-content {
+  width: 100%;
+  font-size: 20px;
+}
+
+.contact-container {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.contact-title {
+  color: #808080;
+  border-right: 7px solid #ccc;
+  padding-right: 20px;
+  float: left;
+  margin: 0 1.5%;
+  margin-left: 8%;
+  font-size: 36px;
+  width: 15%;
+}
+
+.contact-content {
   width: 100%;
   font-size: 20px;
 }
