@@ -248,8 +248,10 @@ p {
 
 .contact-content li {
   margin: 0 10px;
+  color: #465874;
 }
 
 .contact-content a {
   text-decoration: none;
+  color: #465874;
 }
