@@ -237,3 +237,21 @@ p {
   font-size: 20px;
   margin-right: 8%;
 }
+
+.contact-content ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-content li {
+  margin: 0 10px;
+  color: #465874;
+}
+
+.contact-content a {
+  text-decoration: none;
+  color: #465874;
+}
