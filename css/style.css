@@ -6,7 +6,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  font-weight: normal;
+  background-color: #ededf5;
 }
 
 h1,
@@ -26,7 +27,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #443e3e;
+  background-color: #34373f;
   padding: 10px 20px;
 }
 
@@ -37,8 +38,8 @@ p {
 
 .name {
   font-size: 24px;
-  background-color: #3498db;
-  color: #808080;
+  background-color: #91cacb;
+  color: #34373f;
   padding: 8px 12px;
   margin-right: 20px;
   border-radius: 5px;
@@ -57,14 +58,15 @@ p {
 
 .right-section .nav-items li a {
   text-decoration: none;
-  color: #71bff3;
+  color: #91cacb;
   font-size: 20px;
 }
 
 .hero-banner {
-  background-image: url('../images/02-hero-bg.jpg');
+  background: linear-gradient(#0084ff57, #0084ff57), url(../images/02-hero-bg.jpg) center no-repeat;
   background-size: cover;
-  background-position: center;
+  min-height: 250px;
+  margin-bottom: 40px;
   height: 300px;
   position: relative;
   margin-bottom: 30px;
@@ -74,8 +76,8 @@ p {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: #443e3e;
-  color: white;
+  background-color: #91cacb;
+  color: #34373f;
   padding: 10px;
 }
 
@@ -90,8 +92,8 @@ p {
 }
 
 .about-title {
-  color: #808080;
-  border-right: 7px solid #ccc;
+  color: #465874;
+  border-right: 7px solid #465874;
   padding-right: 20px;
   float: left;
   margin: 0 1.5%;
@@ -103,6 +105,7 @@ p {
 .about-content {
   width: 100%;
   font-size: 20px;
+  margin-right: 8%;
 }
 
 .work-container {
@@ -111,8 +114,8 @@ p {
 }
 
 .work-title {
-  color: #808080;
-  border-right: 7px solid #ccc;
+  color: #465874;
+  border-right: 7px solid #465874;
   padding-right: 20px;
   float: left;
   margin: 0 1.5%;
@@ -124,7 +127,94 @@ p {
 .work-content {
   width: 100%;
   font-size: 20px;
+  margin-right: 8%;
 }
+
+/* Portfolio Container */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.project-list .project:nth-child(1) {
+  flex: 1 1 100%;
+}
+
+.project-list .project:nth-child(1) .project-wrap {
+  height: 400px;
+}
+
+.project {
+  flex: 1 1 50%;
+}
+
+.project-wrap {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  height: 300px;
+  border: 3px solid #465874;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+.project-wrap:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.project:nth-child(1) .project-wrap {
+  background-image: url(../images/placementfinder.png);
+  background-position: top;
+}
+
+.project:nth-child(2) .project-wrap {
+  background-image: url(../images/parcelpal.png);
+  background-position: top;
+}
+
+.project:nth-child(3) .project-wrap {
+  background-image: url(../images/01-html-css-git-challenge-demo.png);
+  background-position: top;
+}
+
+.project:nth-child(4) .project-wrap {
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-position: center;
+}
+
+.project:nth-child(5) .project-wrap {
+  background-image: url(../images/02-run-buddy.jpg);
+  background-position: top;
+}
+
+.project-content {
+  display: inline-block;
+  padding: 10px 10px 10px 15px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  color: #91cacb;
+  background-color: #465874;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project-descr {
+  font-size: 10px;
+}
+
 
 .contact-container {
   display: flex;
@@ -132,8 +222,8 @@ p {
 }
 
 .contact-title {
-  color: #808080;
-  border-right: 7px solid #ccc;
+  color: #465874;
+  border-right: 7px solid #465874;
   padding-right: 20px;
   float: left;
   margin: 0 1.5%;
@@ -145,4 +235,5 @@ p {
 .contact-content {
   width: 100%;
   font-size: 20px;
+  margin-right: 8%;
 }
