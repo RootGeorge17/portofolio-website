@@ -187,12 +187,12 @@ p {
 }
 
 .project:nth-child(4) .project-wrap {
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(../images/password_generator.png);
   background-position: center;
 }
 
 .project:nth-child(5) .project-wrap {
-  background-image: url(../images/02-run-buddy.jpg);
+  background-image: url(../images/quiz.png);
   background-position: top;
 }
 
