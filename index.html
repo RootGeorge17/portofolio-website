@@ -1,150 +1,139 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <title>George Sopov // Software Developmer</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css?v=1.1" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <nav class="navbar">
-      <section class="left-section">
-        <h1 class="name">George</h1>
-      </section>
-
-      <section class="right-section">
-        <ul class="nav-items">
-          <li><a href="#about">About me</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact me</a></li>
-        </ul>
-      </section>
+    <h1 class="logo">
+      George Sopov
+    </h1>
+    <nav class="menu" aria-label="Main Navigation">
+      <a href="#about">About me</a>
+      <a href="#project">Projects</a>
+      <a href="#contact">Contact me</a>
+      <a href="#resume" target="_blank">Resume</a>
     </nav>
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div class="text">
+  <section class="hero">
+    <div>
       <h2>Welcome to my website!</h2>
     </div>
   </section>
 
   <main class="page-wrapper">
-    <section class="page-section" id="about">
-      <div class="about-container">
-        <div class="about-title">
-          <h2>About Me</h2>
-        </div>
-        <div class="about-content">
-          <p>Ambitious Computer Science student, on target to achieve a 1st class degree, driven by a passion for
-            problem-solving and a deep fascination for
-            technology and its potential for transformative innovation. My educational journey, coupled with success in
-            fast-paced roles like a Production Assistant, has
-            cultivated a diverse skill set encompassing problem-solving, collaboration, and technical proficiency.
-            Looking ahead, my aspiration is to transition into a placement software engineer role. I aim to apply my
-            skills to create creative solutions and contribute to
-            cutting-edge projects. <br>
-            Eager to bring a blend of adaptability and technical prowess, prepared and
-            enthusiastic to add value to any software development team.</p>
-        </div>
+    <section id="about" class="about-section section">
+      <div class="about-title">
+        <h3>About Me</h3>
+      </div>
+      <div class="section-content">
+        <p>Ambitious Computer Science student, on target to achieve a 1st class degree, driven by a passion for
+          problem-solving and a deep fascination for
+          technology and its potential for transformative innovation. My educational journey, coupled with success in
+          fast-paced roles like a Production Assistant, has
+          cultivated a diverse skill set encompassing problem-solving, collaboration, and technical proficiency.
+          Looking ahead, my aspiration is to transition into a placement software engineer role. I aim to apply my
+          skills to create creative solutions and contribute to
+          cutting-edge projects. <br>
+          Eager to bring a blend of adaptability and technical prowess, prepared and
+          enthusiastic to add value to any software development team.</p>
       </div>
     </section>
 
     <!-- portfolio container -->
-    <section class="project-section work" id="work">
-      <div class="work-container">
-        <div class="work-title">
-          <h2>Work</h2>
-        </div>
-        <div class="work-content">
-          <div class="project-list">
-            <a class="project" href="http://hc23-17.poseidon.salford.ac.uk" target="_blank">
-              <div class="project-wrap">
-                <div class="project-content">
-                  <div class="project-title">
-                    BCS Placement Finder
-                  </div>
-                  <p class="project-descr">
-                    PHP, JavaScript, Mysql, Bootstrap, CSS, HTML
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a class="project" href="http://sgc017.poseidon.salford.ac.uk" target="_blank">
-              <div class="project-wrap">
-                <div class="project-content">
-                  <div class="project-title">
-                    ParcelPal
-                  </div>
-                  <p class="project-descr">
-                    PHP, JavaScript, Mysql, Bootstrap, CSS, HTML
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a class="project" href="https://rootgeorge17.github.io/Marketing-Agency-WebApp/" target="_blank">
-              <div class="project-wrap">
-                <div class="project-content">
-                  <div class="project-title">
-                    Horiseon
-                  </div>
-                  <p class="project-descr">
-                    CSS, HTML
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a class="project" href="https://rootgeorge17.github.io/password-generator-js/" target="_blank">
-              <div class="project-wrap">
-                <div class="project-content">
-                  <div class="project-title">
-                    Password Generator
-                  </div>
-                  <p class="project-descr">
-                    JavaScript, Bootstrap, CSS, HTML
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a class="project" href="https://rootgeorge17.github.io/timed-coding-quiz-js/" target="_blank">
-              <div class="project-wrap">
-                <div class="project-content">
-                  <div class="project-title">
-                    Timed Coding Quiz
-                  </div>
-                  <p class="project-descr">
-                    JavaScript, Bootstrap, CSS, HTML
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+    <section id="project" class="project-section section">
+      <div class="section-title">
+        <h3>Work</h3>
       </div>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <div class="contact-container">
-        <div class="contact-title">
-          <h2>Contact Me</h2>
-        </div>
-        <div class="contact-content">
-          <ul>
-            <li>+44 7588 040044</li>
-            <li><a href="mailto:g.sopov@edu.salford.ac.uk" target="_blank">g.sopov@edu.salford.ac.uk</a></li>
-            <li><a href="https://github.com/RootGeorge17" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/georgesopov/" target="_blank">LinkedIn</a></li>
-          </ul>
-        </div>
+      <div class="project-list">
+        <a class="project" href="http://hc23-17.poseidon.salford.ac.uk" target="_blank">
+          <div class="project-wrap">
+            <div class="project-content">
+              <div class="project-title">
+                BCS Placement Finder
+              </div>
+              <p class="project-descr">
+                PHP, JavaScript, Mysql, Bootstrap, CSS, HTML
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="project" href="http://sgc017.poseidon.salford.ac.uk" target="_blank">
+          <div class="project-wrap">
+            <div class="project-content">
+              <div class="project-title">
+                ParcelPal
+              </div>
+              <p class="project-descr">
+                PHP, JavaScript, Mysql, Bootstrap, CSS, HTML
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="project" href="https://rootgeorge17.github.io/Marketing-Agency-WebApp/" target="_blank">
+          <div class="project-wrap">
+            <div class="project-content">
+              <div class="project-title">
+                Horiseon
+              </div>
+              <p class="project-descr">
+                CSS, HTML
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="project" href="https://rootgeorge17.github.io/password-generator-js/" target="_blank">
+          <div class="project-wrap">
+            <div class="project-content">
+              <div class="project-title">
+                Password Generator
+              </div>
+              <p class="project-descr">
+                JavaScript, Bootstrap, CSS, HTML
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="project" href="https://rootgeorge17.github.io/timed-coding-quiz-js/" target="_blank">
+          <div class="project-wrap">
+            <div class="project-content">
+              <div class="project-title">
+                Timed Coding Quiz
+              </div>
+              <p class="project-descr">
+                JavaScript, Bootstrap, CSS, HTML
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
   </main>
+
+  <!-- contact -->
+  <footer id="contact" class="section">
+    <div class="section-title">
+      <h3>Contact Me</h3>
+    </div>
+    <ul class="contact-list">
+      <li>+44 7588 040044</li>
+      <li><a href="mailto:g.sopov@edu.salford.ac.uk" target="_blank">g.sopov@edu.salford.ac.uk</a></li>
+      <li><a href="https://github.com/RootGeorge17" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/georgesopov/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
