@@ -1,7 +1,55 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  margin: 0;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+/* Main CSS */
 :root {
   --primary-color: #34373f;
   --secondary-color: #98d6d6;
-  --accent-color: #f5f5f5;
   --back-color: #91cacb;
   --h3-color: #465874;
 }
@@ -31,6 +79,12 @@ header {
   background-color: var(--primary-color);
 }
 
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
 h1.logo {
   font-size: 44px;
   font-weight: 700;
@@ -40,28 +94,38 @@ h1.logo {
   background-color: var(--back-color);
 }
 
-.menu {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.menu a,
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items li {
+  margin: 0 20px;
+}
+
+.nav-items a,
 .contact-list li a {
   position: relative;
   font-size: 22px;
-  margin: 0 20px;
   text-decoration: none;
   color: var(--secondary-color);
   transition: color 0.3s;
 }
 
-.menu a:focus,
+.nav-items a:focus,
 .contact-list li a:focus {
   color: var(--secondary-color);
 }
 
-.menu a::after,
+.nav-items a::after,
 .contact-list li a::after {
   content: "";
   position: absolute;
@@ -73,30 +137,29 @@ h1.logo {
   transition: width 0.3s;
 }
 
-.menu a:hover::after,
+.nav-items a:hover::after,
 .contact-list li a:hover::after {
   width: 100%;
 }
 
 /* Hero Banner */
-.hero {
-  position: relative;
+.hero-banner {
+  background: linear-gradient(#0084ff57, #0084ff57), url(../images/02-hero-bg.jpg) center no-repeat;
+  background-size: cover;
   min-height: 250px;
   margin-bottom: 40px;
-  background:
-    linear-gradient(#0084ff57, #0084ff57),
-    url(../images/02-hero-bg.jpg) center no-repeat;
-  background-size: cover;
+  height: 300px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
-
-.hero div {
+.hero-banner div {
   position: absolute;
   right: 25px;
   bottom: 25px;
 }
 
-.hero h2 {
+.hero-banner h2 {
   font-size: 34px;
   font-weight: 700;
   padding: 10px;
@@ -107,8 +170,9 @@ h1.logo {
 /* Main / Section */
 .section {
   display: flex;
-  max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 1.5%;
+  margin-left: 6%;
+  margin-right: 6%;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 40px;
@@ -150,9 +214,6 @@ h1.logo {
   text-align: justify;
   color: var(--primary-color);
 }
-
-/* About me */
-
 
 /* Portfolio Container */
 .project-list {
@@ -274,13 +335,24 @@ footer {
     margin-bottom: 15px;
   }
 
-  .menu {
+  .navbar {
     justify-content: space-between;
     max-width: 500px;
     width: 100%;
   }
 
-  .menu a {
+  .left-section,
+  .right-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items li {
     margin: 10px 0;
   }
 
@@ -290,11 +362,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .menu {
+  .navbar {
     flex-direction: column;
   }
 
-  .hero div {
+  .hero-banner div {
     width: 100%;
     text-align: center;
     top: 50%;
@@ -344,7 +416,7 @@ footer {
     font-size: 34px;
   }
 
-  .hero h2 {
+  .hero-banner h2 {
     font-size: 26px;
   }
 
