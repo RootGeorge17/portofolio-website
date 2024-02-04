@@ -2,6 +2,8 @@
 
 ## Description
 
+My website portfolio, showcasing a description about me, my projects and my contact details.
+
 ## Usage
 
 #### Access the application on: https://rootgeorge17.github.io/portofolio-website/
