@@ -7,7 +7,7 @@
 #### Access the application on: https://rootgeorge17.github.io/portofolio-website/
 #### The following gif shows the web application's appearance and functionality:
 
-![alt text](images/CPT2402041154-1080x935)
+![alt text](images/CPT2402041154-1080x935.gif)
 
 ## Installation
 
