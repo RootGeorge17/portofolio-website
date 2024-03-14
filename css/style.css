@@ -256,18 +256,18 @@ h1.logo {
 }
 
 .project:nth-child(3) .project-wrap {
-  background-image: url(../images/01-html-css-git-challenge-demo.png);
+  background-image: url(../images/application.png);
   background-position: center;
 }
 
 .project:nth-child(4) .project-wrap {
-  background-image: url(../images/password_generator.png);
+  background-image: url(../images/1708369113677.jpg);
   background-position: center;
 }
 
 .project:nth-child(5) .project-wrap {
   background-image: url(../images/quiz.png);
-  background-position: top;
+  background-position: center;
 }
 
 .project-content {
